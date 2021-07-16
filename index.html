@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textbox">
+            <h2>Hi! I am<br><span> Ananya Arora....</span></h2>
+            
+        </div>
+    </section>
+    <section class="Education" id="education">
+        <div class="heading">
+            <h2>Education</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+            <ul>
+                <li>Class 10: I completed my class 10 in year 2018 from Bhavan's B.P Vidya Mandir,Ashti,Nagpur</li><br>
+                <li>Class 12:I completed my class 12 in year 2020 from St.Paul Jr College,Nagpur</li><br>
+                <li>Graduatation:Currently I am pursuing my Btech in Cse With Specialization in Bioinformatics in session 2020-2024</li>
+            </ul>
+            </div>
+        
+        <div class="w50">
+            <img src="pexels-olia-danilevich-5088022.jpg" style="float: right;margin-right: 40px;" class="img">
+        </div>
+    </div>
+    </section>
+    <section class="Projects" id="project">
+        <div class="heading2">
+            <h2>My Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="content">
+            <div class="projectBx">
+                <img src="briefcase.png">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+            </div>
+            <div class="projectBx">
+                <img src="dish.png">
+                <h2>Restaurant Website</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+            </div>
+            <div class="projectBx">
+                <img src="rain.png">
+                <h2>Weather App</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+            </div>
+            <div class="projectBx">
+                <img src="ideas.png">
+                <h2>Quiz App</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    window.addEventListener('scroll',function()
+    {
+        var header=document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+
+    });
+    </script>
+</body>
+</html>
